@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial, sans-serif';
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.header {
+    background-color: #fdfdfdd7; /* Dark grey background */
+    padding: 20px 0;
+    color: rgb(10, 3, 3);
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+}
+
+.jumbotron {
+    background: url('images/head.png') no-repeat center center;
+    background-size: cover;
+    color: rgb(92, 192, 241);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.jumbotron h1, .jumbotron p {
+    color: rgb(254, 254, 254);
+}
+
+/* .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+} */
+
+.footer a {
+    color: #6c83d9;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+h1.text-center {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(131, 27, 27, 0.2);
+}
+
+.card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text .menu-price {
+    font-size: 1.2rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.breadcrumb {
+    background-color: #fff;
+}
+
+.container {
+    background-color: #ffffffd8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.text-secondary {
+    color: #6c757d;
+}
+
+.text-primary {
+    color: #007bff;
+}   
+body {
+    background-color: #f8f9fa;
+}
+form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-group label {
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+

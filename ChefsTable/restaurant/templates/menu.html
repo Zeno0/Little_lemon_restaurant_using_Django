@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">Our Menu</h1>
+    <div class="row">
+        {% for item in menu.menu %}
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="/static/images/{{item.name}}.png" class="card-img-top" alt="{{item.name}}" />
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="{% url 'menu_item' item.pk %}">{{ item.name }}</a>
+                    </h5>
+                    <p class="card-text">
+                        <span class="menu-price">${{ item.price }}.00</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

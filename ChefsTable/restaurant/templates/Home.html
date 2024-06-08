@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .jumbotron {
+        background: url('{% static "images/head.png" %}') no-repeat center center;
+        background-size: cover;
+        color: rgb(236, 236, 239);
+        text-shadow: 2px 2px 4px #000000;
+    }
+</style>
+
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to My Restaurant</h1>
+    <p class="lead">Experience the finest cuisine in a delightful setting.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'menu' %}" role="button">Explore Our Menu</a>
+</div>
+
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <img src="{% static 'images/all_food.png' %}" class="img-fluid rounded mb-3" alt="Delicious Food">
+            <h3>Delicious Food</h3>
+            <p>Our chefs use only the freshest ingredients to create mouth-watering dishes.</p>
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'images/atmosphere.png' %}" class="img-fluid rounded mb-3" alt="Cozy Atmosphere">
+            <h3>Cozy Atmosphere</h3>
+            <p>Enjoy your meal in a warm and inviting atmosphere, perfect for any occasion.</p>
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'images/staff.png' %}" class="img-fluid rounded mb-3" alt="Exceptional Service">
+            <h3>Exceptional Service</h3>
+            <p>Our staff is dedicated to providing you with an unforgettable dining experience.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

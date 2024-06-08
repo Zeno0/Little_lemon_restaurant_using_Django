@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">About Us</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Our Story</h2>
+            <p>
+                Welcome to My Restaurant, where culinary excellence meets a warm and inviting atmosphere.
+                Established in 2024, we have been dedicated to providing our guests with an exceptional dining experience.
+                Our team of skilled chefs uses only the freshest ingredients to create delicious and memorable dishes.
+            </p>
+            <p>
+                We believe in the power of good food to bring people together. Whether you're here for a casual meal with friends,
+                a family celebration, or a romantic dinner, we strive to make every visit special. Join us and be a part of our story.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/head.png' %}" class="img-fluid rounded mb-3" alt="Restaurant Interior">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-4 text-center">
+            
+            <img src="{% static 'images/ing.png' %}" class="img-fluid rounded-circle mb-3" alt="Fresh Ingredients">
+            <h3>Fresh Ingredients</h3>
+            <p>We source the freshest ingredients to create our delicious dishes.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'images/atmosphere.png' %}" class="img-fluid rounded-circle mb-3" alt="Cozy Atmosphere">
+            <h3>Cozy Atmosphere</h3>
+            <p>Enjoy your meal in a warm and inviting setting.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'images/staff.png' %}" class="img-fluid rounded-circle mb-3" alt="Excellent Service">
+            <h3>Excellent Service</h3>
+            <p>Our staff is dedicated to making your dining experience unforgettable.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

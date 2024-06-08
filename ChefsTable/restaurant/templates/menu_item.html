@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="container mt-5">
+    <article>
+        <h1 class="text-center">{{ menu_item.name }}</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'menu' %}">Menu</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ menu_item.name }}</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/static/images/{{menu_item.name}}.png"  class="img-fluid rounded mb-3" alt="{{menu_item.name}}">
+                <!-- {% if menu_item.image %}
+                <img src="{{ menu_item.image.url }}" class="img-fluid rounded mb-3" alt="{{ menu_item.name }}">
+                {% else %}
+                <img src="{% static 'images/default_food.jpg' %}" class="img-fluid rounded mb-3" alt="{{ menu_item.name }}">
+                {% endif %} -->
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-secondary">{{ menu_item.name }}</h2>
+                <p class="lead">{{ menu_item.menu_item_desc }}</p>
+                <h3 class="text-primary">${{ menu_item.price }}.00</h3>
+            </div>
+        </div>
+    </article>
+</section>
+{% endblock %}

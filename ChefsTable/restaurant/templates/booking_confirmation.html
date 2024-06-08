@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-body text-center">
+            <h1 class="card-title mb-4" style="color: #31373a;">Booking Confirmation</h1>
+            <p class="card-text">Thank you, <strong>{{ name }}</strong>, for booking a table with us.</p>
+            <p class="card-text">We look forward to seeing you on <strong>{{ date }}</strong>!</p>
+            <a href="{% url 'menu' %}" class="btn btn-primary mt-3">View Menu</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .card {
+        border: none;
+        border-radius: 10px;
+    }
+    .card-title {
+        font-size: 2rem;
+    }
+    .card-text {
+        font-size: 1.25rem;
+    }
+</style>
+{% endblock %}
