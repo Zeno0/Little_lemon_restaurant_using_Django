@@ -26,14 +26,14 @@ python -m venv meta_env
 - install Django
 
 ```bash
-    pip install django
+pip install django
 ```
    
 ### ClONE THE REPOSITORY>
 - clone in the workspace where environment with Django exists
 
 ```bash
-   git clone https://github.com/Zeno0/Little_lemon_restaurant_using_Django.git
+git clone https://github.com/Zeno0/Little_lemon_restaurant_using_Django.git
 ```
 
 
